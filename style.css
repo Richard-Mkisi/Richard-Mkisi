@@ -1,0 +1,498 @@
+*
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ece9e6, #ffffff);
+  color: #222;
+  line-height: 1.6;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.top-bar {
+  background: linear-gradient(90deg, #004466, #006699);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.6rem;
+  letter-spacing: 1.2px;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.main-nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+  color: #ffcc00;
+}
+
+.main-nav input[type="search"] {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.subjects-nav {
+  background: #0072bb;
+  padding: 12px 20px;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.subjects-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.subjects-nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.subjects-nav ul li a:hover {
+  background-color: #004466;
+}
+
+main section {
+  margin-top: 40px;
+  padding: 10px;
+}
+
+main section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #004466;
+}
+
+main section ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+main section ul li {
+  margin-bottom: 10px;
+}
+
+main section ul li a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: 600;
+}
+
+main section ul li a:hover {
+  color: #004466;
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 18px 10px;
+  margin-top: 40px;
+  font-size: 1rem;
+  color: #555;
+  border-top: 1px solid #ddd;
+  background: #f9f9f9;
+  border-radius: 12px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background: #f4f7f8;
+  color: #222;
+}
+
+/* Buttons & links */
+a, button {
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+a:hover {
+  color: #004466;
+  text-decoration: underline;
+}
+
+button:hover {
+  background-color: #003355;
+}
+
+/* Sections */
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .top-bar, .subjects-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul li {
+    margin-bottom: 10px;
+  }
+}
+body.night {
+  background-color: #121212;
+  color: #eee;
+}
+
+body.night a {
+  color: #66aaff;
+}
+
+body.night .top-bar,
+body.night footer,
+body.night .subjects-nav {
+  background-color: #222;
+  color: white;
+}
+.resource-card {
+  border: 2px solid #004466;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #f9faff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resource-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+html {
+  scroll-behavior: smooth;
+}
+header {
+  position: sticky;
+  top: 0;
+  background-color: #004466;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+.accordion {
+  background-color: #004466;
+  color: white;
+  cursor: pointer;
+  padding: 14px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.accordion:hover {
+  background-color: #005577;
+}
+
+.panel {
+  padding: 10px 20px;
+  background-color: #f1f1f1;
+  display: none; /* This hides the PDF lists initially */
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.panel a {
+  display: inline-block;
+  margin: 6px 0;
+  text-decoration: none;
+  color: #004466;
+  font-weight: 500;
+}
+
+.panel a:hover {
+  text-decoration: underline;
+}
+.sub-subject {
+  margin-top: 20px;
+  padding-left: 10px;
+  border-left: 3px solid #004466;
+}
+
+.sub-subject h4 {
+  color: #004466;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.sub-subject a {
+  text-decoration: none;
+  color: #004466;
+  font-weight: 500;
+  margin-left: 8px;
+}
+
+.sub-subject a:hover {
+  color: #006699;
+  text-decoration: underline;
+}
+.topic-list {
+  display: flex;          /* arrange children in a row */
+  gap: 20px;              /* space between topic links */
+  flex-wrap: wrap;        /* wrap to next line if no space */
+}
+
+.topic-list a {
+  padding: 10px 15px;
+  background-color: #004466;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;    /* prevent line breaks inside topics */
+}
+
+.topic-list a:hover {
+  background-color: #006699;
+}
+.subjects {
+  display: flex;              /* Arrange subjects in a horizontal row */
+  flex-wrap: wrap;            /* Wrap to next line if no space */
+  gap: 25px;                  /* Space between subjects */
+  justify-content: center;    /* Center horizontally on the page */
+  margin: 40px 0;             /* Vertical space around */
+  padding: 0 10px;            /* Small side padding */
+}
+
+.subjects a {
+  background: linear-gradient(135deg, #1e90ff, #00bfff); /* Blue gradient */
+  color: white;
+  text-decoration: none;
+  padding: 25px 40px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(30, 144, 255, 0.4);
+  transition: background 0.4s ease, transform 0.3s ease;
+  text-align: center;
+  flex: 1 1 200px;  /* Responsive min width */
+  max-width: 250px;
+  user-select: none; /* Prevent text highlight on click */
+}
+
+.subjects a:hover {
+  background: linear-gradient(135deg, #007acc, #0099ff);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 153, 255, 0.6);
+  cursor: pointer;
+}
+.subjects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin: 40px 0;
+  padding: 0 10px;
+}
+
+.subjects a {
+  background: linear-gradient(135deg, #1e90ff, #00bfff);
+  color: white;
+  text-decoration: none;
+  padding: 25px 40px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(30, 144, 255, 0.4);
+  transition: background 0.4s ease, transform 0.3s ease;
+  text-align: center;
+  flex: 1 1 200px;
+  max-width: 250px;
+  user-select: none;
+}
+
+.subjects a:hover {
+  background: linear-gradient(135deg, #007acc, #0099ff);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 153, 255, 0.6);
+  cursor: pointer;
+}
+.topic-list {
+  display: flex;         /* arrange items in a row */
+  flex-wrap: wrap;       /* allow wrapping if too many */
+  gap: 20px;             /* spacing between topics */
+  justify-content: center; /* center the topics horizontally */
+  margin: 40px 0;        /* vertical spacing */
+  padding: 0 10px;
+}
+
+.topic-list a {
+  padding: 12px 20px;
+  background-color: #004466;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 68, 102, 0.5);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  white-space: nowrap;   /* prevent line breaks inside */
+  flex: 1 1 180px;       /* flexible width but min 180px */
+  max-width: 250px;
+  text-align: center;
+}
+
+.topic-list a:hover {
+  background-color: #006699;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 102, 153, 0.7);
+  cursor: pointer;
+}
+/* Subjects bar styles */
+.subjects {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  flex-wrap: wrap; /* wrap on small screens */
+}
+
+.subjects a {
+  flex: 1 1 150px;
+  max-width: 180px;
+  padding: 20px 15px;
+  background: linear-gradient(135deg, #1e90ff, #00bfff);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 6px 15px rgba(30, 144, 255, 0.4);
+  transition: background 0.4s ease, transform 0.3s ease;
+  user-select: none;
+  cursor: pointer;
+}
+
+.subjects a:hover {
+  background: linear-gradient(135deg, #007acc, #0099ff);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 153, 255, 0.6);
+}
+
+/* Subject section (topics) */
+.subject-section {
+  margin-bottom: 50px;
+}
+
+.subject-section h2 {
+  border-bottom: 3px solid #1e90ff;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+/* Topic list styles */
+.topic-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: flex-start;
+}
+
+.topic-list a {
+  padding: 12px 20px;
+  background-color: #004466;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 68, 102, 0.5);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  white-space: nowrap;
+  flex: 1 1 180px;
+  max-width: 250px;
+  text-align: center;
+}
+
+.topic-list a:hover {
+  background-color: #006699;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 102, 153, 0.7);
+}
+.physics-topics {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  .physics-topics li a {
+    padding: 10px 15px;
+    background: #1e90ff;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+  }
+
+  .physics-topics li a:hover {
+    background: #007acc;
+  }
+
+  .note-block {
+    display: none;
+  }
+
+  .note-block:target {
+    display: block;
+    background: #f5fcff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+

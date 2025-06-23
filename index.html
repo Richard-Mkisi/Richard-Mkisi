@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Science Notes Library</title>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+<body id="top">
+  
+
+  <header>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <div class="top-bar">
+      <div class="logo">📘 Science Library For Secondary School Learners</div>
+      <nav class="main-nav">
+       <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="#about">About</a></li>      <!-- Scrolls to About section -->
+  <li><a href="#contact">Contact</a></li>  <!-- Scrolls to Contact section -->
+ <li style="position: relative;">
+
+
+
+  <ul id="suggestions" style="
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+    z-index: 1000;
+    list-style: none;
+    padding: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  "></ul>
+</li>
+<li>
+  <button id="modeToggle" style="
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 6px;
+    border: none;
+    background-color: #007acc;
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+  ">
+    🌙 Night Mode
+  </button>
+</li>
+
+
+</ul>
+
+      </nav>
+    </div>
+
+    <nav class="subjects-nav">
+      <ul>
+        <li><a href="#physics">Physics</a></li>
+        <li><a href="#chemistry">Chemistry</a></li>
+        <li><a href="#mathematics">Mathematics</a></li>
+        <li><a href="#biology">Biology</a></li>
+        <li><a href="#resources">Resources</a></li> 
+    </nav>
+    <form action="https://www.google.com/search" method="get" target="_blank" style="margin-top: 10px;">
+  <input type="text" name="q" placeholder="Search on Google..." style="padding: 8px; width: 250px; border-radius: 4px; border: 1px solid #ccc;">
+  <input type="hidden">
+  <button type="submit" style="padding: 8px 12px; border:none; background:#004466; color:white; border-radius:4px; cursor:pointer;">
+    Search
+  </button>
+
+
+</form>
+</div>
+  </header>
+
+  <main>
+    <section id="hero" style="padding: 80px 20px; text-align: center; background: linear-gradient(to right, #004466, #008080); color: white;">
+  <h1 style="font-size: 2.8rem; margin-bottom: 15px;">Welcome to the "Science Library For Secondary School Learners"! 📘</h1>
+  <p style="font-size: 1.2rem; max-width: 800px; margin: auto;">
+    Empower your mind with easy-to-read notes in <strong>Physics, Chemistry, Biology, and Mathematics</strong>. 
+    Built for learners like you — by a fellow student, for students. Let’s learn smart and dream big!
+  </p>
+</section>
+
+<section id="physics" class="subject-section">
+  <h2>⚛️ Physics</h2>
+  <div class="topic-list">
+    <ul class="physics-topics">
+      <li><a href="#newtons-laws">Newton's Laws</a></li>
+      <li><a href="#wave-theory">Wave Theory</a></li>
+      <li><a href="#electricity">Electricity</a></li>
+      <li><a href="#magnetism">Magnetism</a></li>
+
+    </ul>
+  </div>
+
+  <div class="note-section">
+    <div id="newtons-laws" class="note-block">
+      <h3>Newton's Laws of Motion</h3>
+      <p>Newton’s three laws of motion form the backbone of classical mechanics. These laws explain how forces influence the motion of objects.</p>
+      <h4>1. First Law – Law of Inertia</h4>
+      <p>An object remains at rest or moves in a straight line at constant speed unless acted upon by a net external force.</p>
+      <h4>2. Second Law – F = ma</h4>
+      <p>The net force on an object is equal to the mass of the object multiplied by its acceleration: <strong>F = ma</strong>.</p>
+      <h4>3. Third Law – Action and Reaction</h4>
+      <p>For every action, there is an equal and opposite reaction.</p>
+    </div>
+
+    <div id="wave-theory" class="note-block">
+      <h3>Wave Theory</h3>
+      <p>Wave theory describes how energy travels through oscillations. There are two main types of waves: transverse and longitudinal.</p>
+      <ul>
+        <li><strong>Wavelength</strong> – distance between two crests or troughs</li>
+        <li><strong>Frequency</strong> – how many waves pass a point per second</li>
+        <li><strong>Speed</strong> – wave speed = frequency × wavelength</li>
+      </ul>
+    </div>
+
+    <div id="electricity" class="note-block">
+      <h3>Electricity</h3>
+      <p>Electricity is the flow of electric charge through a conductor. It involves concepts like current, voltage, resistance, and power.</p>
+      <ul>
+        <li><strong>Current (I)</strong> – flow of charge</li>
+        <li><strong>Voltage (V)</strong> – potential difference</li>
+        <li><strong>Ohm’s Law</strong>: <code>V = IR</code></li>
+      </ul>
+    </div>
+
+    <div id="magnetism" class="note-block">
+      <h3>Magnetism</h3>
+      <p>Magnetism refers to the force exerted by magnets when they attract or repel each other.</p>
+      <ul>
+        <li>Magnetic fields are created by moving charges.</li>
+        <li>Like poles repel, unlike poles attract.</li>
+        <li>Magnetic field lines go from north to south.</li>
+      </ul>
+    </div>
+
+    
+</section>
+
+
+
+
+<section id="chemistry" class="subject-section">
+  <h2>🧪 Chemistry</h2>
+  <div class="topic-list">
+    <a href="chemistry-periodic-table.html">Periodic Table</a>
+    <a href="chemistry-organic-basics.html">Organic Chemistry Basics</a>
+    <a href="chemistry-acids-bases.html">Acids and Bases</a>
+    <a href="chemistry-chemical-bonding.html">Chemical Bonding</a>
+  </div>
+</section>
+
+<section id="mathematics" class="subject-section">
+  <h2>➗ Mathematics</h2>
+  <div class="topic-list">
+    <a href="mathematics-calculus.html">Calculus Essentials</a>
+    <a href="mathematics-algebra.html">Algebra and Equations</a>
+    <a href="mathematics-trigonometry.html">Trigonometry Formulas</a>
+    <a href="mathematics-statistics.html">Statistics Basics</a>
+  </div>
+</section>
+
+<section id="biology" class="subject-section">
+  <h2>🧬 Biology</h2>
+  <div class="topic-list">
+    <a href="biology-cell-structure.html">Cell Structure</a>
+    <a href="biology-photosynthesis.html">Photosynthesis</a>
+    <a href="biology-human-anatomy.html">Human Anatomy</a>
+    <a href="biology-genetics.html">Genetics and DNA</a>
+  </div>
+</section>
+
+     <section id="resources" style="margin-top: 60px; padding: 40px;">
+  <h2 style="text-align: center; color: #004466;">📥 Science Resources by Subject</h2>
+
+  <div class="accordion-section">
+
+    <button class="accordion">⚛️ Physics</button>
+    <div class="panel">
+      <a href="pdfs/newtons-laws.pdf" download>Newton’s Laws</a><br />
+      <a href="pdfs/electromagnetism.pdf" download>Electromagnetism Summary</a>
+    </div>
+
+    <button class="accordion">🧪 Chemistry</button>
+    <div class="panel">
+      <a href="pdfs/organic-chemistry.pdf" download>Organic Chemistry</a><br />
+      <a href="pdfs/acids-bases.pdf" download>Acids & Bases</a>
+    </div>
+
+    <button class="accordion">➗ Mathematics</button>
+    <div class="panel">
+      <a href="pdfs/trigonometry.pdf" download>Trigonometry Formulas</a><br />
+      <a href="pdfs/algebra.pdf" download>Algebra Summary</a>
+    </div>
+
+    <button class="accordion">🧬 Biology</button>
+    <div class="panel">
+      <a href="pdfs/cell-structure.pdf" download>Cell Structure Overview</a><br />
+      <a href="pdfs/dna.pdf" download>Genetics & DNA</a>
+    </div>
+   <button class="accordion">📄 Past Papers</button>
+<div class="panel">
+
+  <!-- 🧬 Biology Past Papers -->
+  <div class="sub-subject">
+    <h4>🧬 Biology</h4>
+    <a href="past-papers/biology-2022.pdf" download>Biology 2022</a><br />
+    <a href="past-papers/biology-2021.pdf" download>Biology 2021</a>
+  </div>
+
+  <!-- 🧪 Chemistry Past Papers -->
+  <div class="sub-subject">
+    <h4>🧪 Chemistry</h4>
+    <a href="past-papers/chemistry-2022.pdf" download>Chemistry 2022</a><br />
+    <a href="past-papers/chemistry-2020.pdf" download>Chemistry 2020</a>
+  </div>
+
+  <!-- ➗ Mathematics Past Papers -->
+  <div class="sub-subject">
+    <h4>➗ Mathematics</h4>
+    <a href="past-papers/mathematics-2021.pdf" download>Mathematics 2021</a><br />
+    <a href="past-papers/mathematics-2020.pdf" download>Mathematics 2020</a>
+  </div>
+
+  <!-- ⚛️ Physics Past Papers -->
+  <div class="sub-subject">
+    <h4>⚛️ Physics</h4>
+    <a href="past-papers/physics-2021.pdf" download>Physics 2021</a><br />
+    <a href="past-papers/physics-2019.pdf" download>Physics 2019</a>
+  </div>
+
+</div>
+  </div>
+</section>
+
+
+<section id="comments" style="margin: 50px auto; max-width: 700px; padding: 20px; border: 2px solid #004466; border-radius: 12px; background-color: #f9faff;">
+  <h2 style="color: #004466; text-align: center;">💬 Comments</h2>
+
+  <form id="commentForm" style="margin-bottom: 20px;">
+    <input type="text" id="nameInput" placeholder="Your name" required style="width: 100%; padding: 8px; margin-bottom: 12px; border-radius: 8px; border: 1px solid #004466;"/>
+    <textarea id="commentInput" placeholder="Write your comment here..." required rows="4" style="width: 100%; padding: 8px; border-radius: 8px; border: 1px solid #004466;"></textarea>
+    <button type="submit" style="margin-top: 10px; padding: 10px 20px; background-color: #004466; color: white; border: none; border-radius: 8px; cursor: pointer;">Submit Comment</button>
+  </form>
+
+  <div id="commentsContainer" style="max-height: 300px; overflow-y: auto; border-top: 1px solid #004466; padding-top: 15px;">
+    <!-- Comments will appear here -->
+  </div>
+</section>
+
+
+    </section>
+    <section id="about" style="margin-top: 60px; text-align: center; padding: 30px; max-width: 700px; margin-left: auto; margin-right: auto; color: #333;">
+  <h2 style="color: #004466;">📘 About This Library</h2>
+  <p>
+    Welcome to the <strong>Science Notes Library</strong> — a place where
+    <strong>Physics, Chemistry, Biology, and Mathematics</strong> come to life.
+  </p>
+  <p>
+    Created by <strong>Richard Mkisi</strong>, a teacher-in-training at the
+    <em>University of Livingstonia</em>, this site is dedicated to making science
+    both understandable and enjoyable.
+  </p>
+  <p>
+    Notes here are organized, beautiful, and built to help students in Malawi and beyond.
+  </p>
+  <p style="font-style: italic;">
+    "Knowledge is power, but wisdom is knowing how to share it." 💡
+  </p>
+</section>
+<section id="contact" style="margin-top: 60px; text-align: center; padding: 30px; max-width: 700px; margin-left: auto; margin-right: auto; color: #333;">
+  <h2 style="color: #004466;">📬 Contact Me</h2>
+  <p>Email: <a href="mailto:richardprethan@gmail.com">richardprethan@gmail.com</a></p>
+  <p>WhatsApp: <a href="https://wa.me/265993450919" target="_blank" rel="noopener noreferrer">+265 99 345 0919</a></p>
+  <p>Feel free to reach out for feedback, questions, or collaboration!</p>
+</section>
+
+<div style="text-align: center; margin: 40px 0;">
+  <a href="#top" style="color: #004466; font-weight: 700; text-decoration: none; font-size: 1.1rem;">
+    ⬆️ Back to Top
+  </a>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Science Notes Library | Built by Richard Mkisi</p>
+  </footer>
+
+ <script>
+  const searchBar = document.getElementById('searchBar');
+
+  searchBar.addEventListener('input', () => {
+    const query = searchBar.value.toLowerCase();
+    // Dynamically select all current topic list items on every input
+    const topicItems = document.querySelectorAll('#topicList li');
+
+    topicItems.forEach(item => {
+      const text = item.textContent.toLowerCase();
+      item.style.display = text.includes(query) ? 'list-item' : 'none';
+    });
+  });
+</script>
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+  
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
+  style="
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #004466;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+    z-index: 1000;
+  ">⬆️</button>
+<script>
+  const toggleBtn = document.getElementById('modeToggle');
+  const body = document.body;
+
+  // Load from memory
+  const mode = localStorage.getItem('mode');
+  if (mode === 'night') {
+    body.classList.add('night');
+    toggleBtn.textContent = '☀️ Day Mode';
+    toggleBtn.style.backgroundColor = '#555';
+  }
+
+  toggleBtn.addEventListener('click', () => {
+    body.classList.toggle('night');
+    const isNight = body.classList.contains('night');
+    localStorage.setItem('mode', isNight ? 'night' : 'day');
+    toggleBtn.textContent = isNight ? '☀️ Day Mode' : '🌙 Night Mode';
+    toggleBtn.style.backgroundColor = isNight ? '#555' : '#004466';
+  });
+</script>
+<script>
+  const acc = document.querySelectorAll(".accordion");
+  acc.forEach(btn => {
+    btn.addEventListener("click", function () {
+      this.classList.toggle("active");
+      const panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  });
+</script>
+<script>
+  const commentForm = document.getElementById('commentForm');
+  const nameInput = document.getElementById('nameInput');
+  const commentInput = document.getElementById('commentInput');
+  const commentsContainer = document.getElementById('commentsContainer');
+
+  // Load from localStorage or start with empty list
+  let comments = JSON.parse(localStorage.getItem('comments')) || [];
+
+  // Display all comments
+  function displayComments() {
+    commentsContainer.innerHTML = '';
+    comments.forEach((comment, index) => {
+      const commentEl = document.createElement('div');
+      commentEl.style.borderBottom = '1px solid #ccc';
+      commentEl.style.marginBottom = '12px';
+      commentEl.style.paddingBottom = '8px';
+
+      commentEl.innerHTML = `
+        <strong style="color:#004466;">${comment.name}</strong> 
+        <small style="color:#777; font-size:0.8rem;">(${new Date(comment.time).toLocaleString()})</small>
+        <button onclick="deleteComment(${index})" title="Delete this comment" style="float:right; background: none; border: none; color: red; font-size: 1rem; cursor: pointer;">🗑️</button>
+        <p style="margin: 6px 0;">${comment.text}</p>
+      `;
+      commentsContainer.appendChild(commentEl);
+    });
+  }
+
+  // Submit new comment
+  commentForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const name = nameInput.value.trim();
+    const text = commentInput.value.trim();
+    if (name && text) {
+      comments.push({ name, text, time: Date.now() });
+      localStorage.setItem('comments', JSON.stringify(comments));
+      displayComments();
+      commentForm.reset();
+    }
+  });
+
+  // Delete a comment
+  function deleteComment(index) {
+    if (confirm("Are you sure you want to delete this comment?")) {
+      comments.splice(index, 1);
+      localStorage.setItem('comments', JSON.stringify(comments));
+      displayComments();
+    }
+  }
+
+  // Initial display
+  displayComments();
+</script>
+
+<script>
+  const acc = document.querySelectorAll(".accordion");
+
+  acc.forEach(btn => {
+    btn.addEventListener("click", function () {
+      this.classList.toggle("active");
+      const panel = this.nextElementSibling;
+
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  });
+</script>
+
+
+</body>
+</html>
